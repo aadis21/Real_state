@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import cityback from "../cta-bg.png"
+import cityback from "../cta-bg.png";
 import "slick-carousel/slick/slick-theme.css";
 
 const images = [
@@ -28,7 +28,7 @@ const images = [
   "p23.png",
   "p24.png",
   "p25.png",
-  "p26.png"
+  "p26.png",
 ];
 
 const Partner = () => {
@@ -78,26 +78,28 @@ const Partner = () => {
           </div>
         ))}
       </Slider>
-      <div className="bg-[#003550] mt-10  text-white text-center py-16 relative">
-        <div className="absolute bottom-0 left-0 right-0 opacity-90 bg-cover bg-center bg-no-repeat"
+      <div className="bg-[#9A7B4F] mt-10  text-white text-center py-16 relative">
+        <div
+          className="absolute bottom-0 left-0 right-0 opacity-90 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${cityback})`, height: "100%" }}
         ></div>
 
         <div className="relative z-10 flex lg:flex-row xsm:flex-col md:flex-col md:gap-10 md:px-10 xsm:gap-10 xsm:px-8 justify-center gap-60">
           <div className=" text-start">
-          <h2 className="text-5xl xsm:text-base font-bold">
-            Find Your Dream Property Today <br /> — Let’s Get Started!
-          </h2>
-          <p className="mt-4 text-lg text-[#d1d5db] xsm:text-xs">
-            Start your real estate journey with us now and discover the perfect <br /> property that suits your lifestyle and budget.
-          </p>
+            <h2 className="text-5xl xsm:text-base font-bold">
+              Find Your Dream Property Today <br /> — Let’s Get Started!
+            </h2>
+            <p className="mt-4 text-lg text-[#d1d5db] xsm:text-xs">
+              Start your real estate journey with us now and discover the
+              perfect <br /> property that suits your lifestyle and budget.
+            </p>
           </div>
 
-         <div className="flex items-center justify-center">
-         <button className=" bg-white  text-black px-3 py-2 text-sm font-bold  rounded-full shadow-lg hover:bg-[#f5f3f1] transition duration-300">
-            FIND NOW! →
-          </button>
-         </div>
+          <div className="flex items-center justify-center">
+            <button className=" bg-white  text-black px-3 py-2 text-sm font-bold  rounded-full shadow-lg hover:bg-[#f5f3f1] transition duration-300">
+              FIND NOW! →
+            </button>
+          </div>
         </div>
       </div>
     </div>

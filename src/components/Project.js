@@ -156,12 +156,12 @@ const Project = () => {
                 <div>
                   <span className="text-gray-400">Starts From</span>{" "}
                   <span className="text-gray-400">/</span>{" "}
-                  <span className="text-[#003550] font-bold text-xl">
+                  <span className="text-[#9A7B4F] font-bold text-xl">
                     {item.price}
                   </span>
                 </div>
                 <a href={item.url} download>
-                  <button className="px-4 py-2 rounded bg-[#003550] text-white">
+                  <button className="px-4 py-2 rounded bg-[#9A7B4F] text-white">
                     Download
                   </button>
                 </a>

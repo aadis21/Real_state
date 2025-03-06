@@ -23,7 +23,7 @@ const Footer = () => {
                   placeholder="Your mobile number"
                   className="px-4 md:px-2 md:py-1 py-2 bg-gray-100 rounded-l-lg w-full"
                 />
-                <button className="bg-blue-900 text-white md:px-2 md:py-1 px-4 py-2 rounded-r-lg whitespace-nowrap flex items-center">
+                <button className="bg-[#9A7B4F] text-white md:px-2 md:py-1 px-4 py-2 rounded-r-lg whitespace-nowrap flex items-center">
                   SUBSCRIBE
                   <span className="ml-2">→</span>
                 </button>

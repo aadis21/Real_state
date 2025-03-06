@@ -67,12 +67,12 @@ const Card = ({ heading, para, price, image, url }) => {
       <div className="p-4 flex flex-wrap justify-between items-center">
         <div>
           <span className="text-gray-500">Starts From </span>
-          <span className="text-[#003550] font-bold text-lg sm:text-xl">
+          <span className="text-[#9A7B4F] font-bold text-lg sm:text-xl">
             {price}
           </span>
         </div>
         <a href={url} download>
-          <button className="px-4 py-2 rounded bg-[#003550] text-white text-sm sm:text-base">
+          <button className="px-4 py-2 rounded bg-[#9A7B4F] text-white text-sm sm:text-base">
             Download
           </button>
         </a>

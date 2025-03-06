@@ -71,7 +71,7 @@ const Contact = () => {
   return (
     <div className="font-roboto xsm:overflow-hidden xsm:-mt-10">
       {/* Header Section */}
-      <div className="bg-[#003550] w-full h-full pt-10 flex items-center flex-col p-4 gap-2">
+      <div className="bg-[#9A7B4F] w-full h-full pt-10 flex items-center flex-col p-4 gap-2">
         <h1 className="text-3xl tracking-wide text-white">Contact Us</h1>
         <p className="text-white text-xs tracking-wider">
           <NavLink to="/" className="text-white">
@@ -105,37 +105,37 @@ const Contact = () => {
             </h1>
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
+                <div className="bg-[#9A7B4F] p-2 text-center rounded-[3px]">
                   <FaLocationDot className="text-white text-lg" />
                 </div>
                 4-M17 ,M-2 BN COMPLEX , AL MUTEENA DEIRA
                 <div className="flex items-center gap-2">
-                  <div className="bg-[#003550] p-2 text-center rounded-[3px]">
+                  <div className="bg-[#9A7B4F] p-2 text-center rounded-[3px]">
                     <FaBuilding className="text-white text-lg" />
                   </div>
                   DUBAI , UAE
                 </div>
               </div>
               {/* <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
+                <div className="bg-[#9A7B4F] p-2 text-center rounded-[3px]">
                   <FaRegFlag className="text-white text-lg" />
                 </div>
                 Postal Code - 160002, India
               </div> */}
               <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
+                <div className="bg-[#9A7B4F] p-2 text-center rounded-[3px]">
                   <FaWhatsapp className="text-white text-lg" />
                 </div>
                 Whatsapp :+971552959123
               </div>
               <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
+                <div className="bg-[#9A7B4F] p-2 text-center rounded-[3px]">
                   <IoCallSharp className="text-white text-lg" />
                 </div>
                 +971582450101,+971552959123
               </div>
               <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
+                <div className="bg-[#9A7B4F] p-2 text-center rounded-[3px]">
                   <MdAlternateEmail className="text-white text-lg" />
                 </div>
                 Email: support@alketbirealestate.com
@@ -262,7 +262,7 @@ const Contact = () => {
             <div className="md:col-span-2 text-center">
               <button
                 type="submit"
-                className="bg-[#003550] text-white px-6 py-2 rounded hover:bg-blue-600 transition-all duration-300"
+                className="bg-[#9A7B4F] text-white px-6 py-2 rounded hover:bg-blue-600 transition-all duration-300"
               >
                 Send Message
               </button>
@@ -271,7 +271,7 @@ const Contact = () => {
         </div>
       </div>
       {/* Bottom CTA Section */}
-      <div className="bg-[#003550] mt-10 text-white text-center py-16 relative">
+      <div className="bg-[#9A7B4F] mt-10 text-white text-center py-16 relative">
         <div
           className="absolute bottom-0 left-0 right-0 opacity-90 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${cityback})`, height: "100%" }}

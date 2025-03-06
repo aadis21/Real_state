@@ -289,7 +289,7 @@ const Property = () => {
   return (
     <div className="font-roboto xsm:overflow-hidden xsm:-mt-10">
       {/* Header Section */}
-      <div className="bg-[#003550] w-full h-full flex items-center flex-col p-4 gap-2">
+      <div className="bg-[#9A7B4F] w-full h-full flex items-center flex-col p-4 gap-2">
         <h1 className="text-3xl tracking-wider text-white xsm:text-base">
           Property List
         </h1>
@@ -320,7 +320,7 @@ const Property = () => {
         <button
           className={`px-4 py-2 rounded ${
             currentTab === "Residential"
-              ? "bg-[#003550] text-white"
+              ? "bg-[#9A7B4F] text-white"
               : "bg-gray-300"
           }`}
           onClick={() => setCurrentTab("Residential")}
@@ -330,7 +330,7 @@ const Property = () => {
         <button
           className={`px-4 py-2 rounded ${
             currentTab === "Commercial"
-              ? "bg-[#003550] text-white"
+              ? "bg-[#9A7B4F] text-white"
               : "bg-gray-300"
           }`}
           onClick={() => setCurrentTab("Commercial")}
@@ -382,7 +382,7 @@ const Property = () => {
                     className="w-full h-full object-cover hover:scale-125 transition duration-1000 shadow-inner"
                   />
                   <div className="absolute top-4 right-4 hover:cursor-pointer z-10 flex gap-2">
-                    <p className="bg-[#003550] text-white xsm:text-xs px-[9px] py-[3px] text-sm  tracking-tight items-center rounded-[2px]">
+                    <p className="bg-[#9A7B4F] text-white xsm:text-xs px-[9px] py-[3px] text-sm  tracking-tight items-center rounded-[2px]">
                       {item.ptype}
                     </p>
                     <p className="bg-[#FA6742] text-white xsm:text-xs px-[9px] py-[3px] text-sm tracking-tight items-center rounded-[2px]">
@@ -395,24 +395,24 @@ const Property = () => {
                     {item.heading}
                   </h1>
                   <p className="flex gap-1 text-sm text-gray-400 xsm:text-xs">
-                    <FaLocationDot className="text-[#003550] xsm:text-xs text-lg" />
+                    <FaLocationDot className="text-[#9A7B4F] xsm:text-xs text-lg" />
                     {item.location}
                   </p>
                   <div className="grid grid-cols-2 gap-4">
                     <p className="flex items-center gap-1 xsm:text-xs">
-                      <FaRupeeSign className="text-[#003550]" />
+                      <FaRupeeSign className="text-[#9A7B4F]" />
                       {item.price}
                     </p>
                     <p className="flex items-center gap-1 xsm:text-xs">
-                      <FaArrowsAlt className="text-[#003550]" />
+                      <FaArrowsAlt className="text-[#9A7B4F]" />
                       {item.area}
                     </p>
                     <p className="flex items-center gap-1 xsm:text-xs">
-                      <FaBuilding className="text-[#003550]" />
+                      <FaBuilding className="text-[#9A7B4F]" />
                       {item.flate}
                     </p>
                     <p className="flex items-center gap-1 xsm:text-xs">
-                      <FaBed className="text-[#003550]" />
+                      <FaBed className="text-[#9A7B4F]" />
                       {item.room}
                     </p>
                   </div>
@@ -421,11 +421,11 @@ const Property = () => {
                       <FaWhatsapp className="text-white" />
                       Quote
                     </button>
-                    <button className="bg-[#003550] xsm:text-xs text-white flex items-center px-3 rounded-[3px] py-2 gap-1">
+                    <button className="bg-[#9A7B4F] xsm:text-xs text-white flex items-center px-3 rounded-[3px] py-2 gap-1">
                       <IoCallSharp className="text-white" />
                       Call Us
                     </button>
-                    <button className="bg-[#003550] xsm:text-xs text-white flex items-center px-3 rounded-[3px] py-2 gap-1">
+                    <button className="bg-[#9A7B4F] xsm:text-xs text-white flex items-center px-3 rounded-[3px] py-2 gap-1">
                       <FaLink className="text-white" />
                       Visit
                     </button>
@@ -448,7 +448,7 @@ const Property = () => {
                     className="w-full h-full object-cover hover:scale-125 transition duration-1000 shadow-inner"
                   />
                   <div className="absolute top-4 right-4 hover:cursor-pointer z-10 flex gap-2">
-                    <p className="bg-[#003550] text-white px-[9px] py-[3px] text-sm tracking-tight items-center rounded-[2px]">
+                    <p className="bg-[#9A7B4F] text-white px-[9px] py-[3px] text-sm tracking-tight items-center rounded-[2px]">
                       {item.ptype}
                     </p>
                     <p className="bg-[#FA6742] text-white px-[9px] py-[3px] text-sm tracking-tight items-center rounded-[2px]">
@@ -459,24 +459,24 @@ const Property = () => {
                 <div className="flex flex-col gap-6 p-4">
                   <h1 className="text-lg font-medium">{item.heading}</h1>
                   <p className="flex gap-1 text-sm text-gray-400">
-                    <FaLocationDot className="text-[#003550] text-lg" />
+                    <FaLocationDot className="text-[#9A7B4F] text-lg" />
                     {item.location}
                   </p>
                   <div className="grid grid-cols-2 gap-4">
                     <p className="flex items-center gap-1">
-                      <FaRupeeSign className="text-[#003550]" />
+                      <FaRupeeSign className="text-[#9A7B4F]" />
                       {item.price}
                     </p>
                     <p className="flex items-center gap-1">
-                      <FaArrowsAlt className="text-[#003550]" />
+                      <FaArrowsAlt className="text-[#9A7B4F]" />
                       {item.area}
                     </p>
                     <p className="flex items-center gap-1">
-                      <FaBuilding className="text-[#003550]" />
+                      <FaBuilding className="text-[#9A7B4F]" />
                       {item.flate}
                     </p>
                     <p className="flex items-center gap-1">
-                      <FaBed className="text-[#003550]" />
+                      <FaBed className="text-[#9A7B4F]" />
                       {item.room}
                     </p>
                   </div>
@@ -485,11 +485,11 @@ const Property = () => {
                       <FaWhatsapp className="text-white" />
                       Quote
                     </button>
-                    <button className="bg-[#003550] text-white flex items-center px-3 rounded-[3px] py-2 gap-1">
+                    <button className="bg-[#9A7B4F] text-white flex items-center px-3 rounded-[3px] py-2 gap-1">
                       <IoCallSharp className="text-white" />
                       Call Us
                     </button>
-                    <button className="bg-[#003550] text-white flex items-center px-3 rounded-[3px] py-2 gap-1">
+                    <button className="bg-[#9A7B4F] text-white flex items-center px-3 rounded-[3px] py-2 gap-1">
                       <FaLink className="text-white" />
                       Visit
                     </button>
@@ -503,7 +503,7 @@ const Property = () => {
       <div className="px-32 py-4">
         {currentTab === "Residential" && (
           <button
-            className="px-4 py-2 xsm:text-xs bg-[#003550] text-white rounded"
+            className="px-4 py-2 xsm:text-xs bg-[#9A7B4F] text-white rounded"
             onClick={() => setShowAllResidential(!showAllResidential)}
           >
             {showAllResidential ? "Show Less" : "Show More"}
@@ -511,7 +511,7 @@ const Property = () => {
         )}
         {currentTab === "Commercial" && (
           <button
-            className="px-4 py-2 bg-[#003550] text-white rounded"
+            className="px-4 py-2 bg-[#9A7B4F] text-white rounded"
             onClick={() => setShowAllCommercial(!showAllCommercial)}
           >
             {showAllCommercial ? "Show Less" : "Show More"}
@@ -519,7 +519,7 @@ const Property = () => {
         )}
       </div>
       {/* Bottom CTA Section */}
-      <div className="bg-[#003550] mt-10 text-white text-center py-16 relative">
+      <div className="bg-[#9A7B4F] mt-10 text-white text-center py-16 relative">
         <div
           className="absolute bottom-0 left-0 right-0 opacity-90 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${cityback})`, height: "100%" }}

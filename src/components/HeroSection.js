@@ -84,7 +84,7 @@ const Herosection = () => {
         </div>
 
         {/* Buildings */}
-        <div className=" bg-[#003550] xsm:hidden md:flex opacity-60 flex justify-around space-x-20 py-3 md:px-5 lg:px-10">
+        <div className=" bg-[#9A7B4F] xsm:hidden md:flex opacity-60 flex justify-around space-x-20 py-3 md:px-5 lg:px-10">
           {[
             { img: "condo.png", text: "New Project" },
             { img: "apartment.png", text: "Apartment" },
@@ -113,7 +113,7 @@ const Herosection = () => {
             </div>
             <div className="text-center">
               <p className="lg:text-5xl md:text-xl font-bold">{projectCount}</p>
-              <p  className="lg:text-base md:text-xs">+ Properties Sold</p>
+              <p className="lg:text-base md:text-xs">+ Properties Sold</p>
             </div>
             <div className="text-center">
               <p className=" lg:text-5xl md:text-xl font-bold">{reviewCount}</p>

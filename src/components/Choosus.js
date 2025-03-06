@@ -13,7 +13,7 @@ const Choosus = () => {
       </div>
 
       {/* Right Section (Content) */}
-      <div className="bg-[#003550] lg:w-1/2 p-8 lg:p-14 text-white rounded-md shadow-lg relative z-0 mt-8 lg:mt-0 lg:ml-[-6rem]">
+      <div className="bg-[#9A7B4F] lg:w-1/2 p-8 lg:p-14 text-white rounded-md shadow-lg relative z-0 mt-8 lg:mt-0 lg:ml-[-6rem]">
         {/* Title Section */}
         <p className="text-yellow-300 text-sm uppercase mb-2">
           Who we are and our service
