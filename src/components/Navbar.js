@@ -40,42 +40,63 @@ const Navbar = () => {
           isVisible ? "translate-y-0" : "-translate-y-full"
         } fixed top-0 left-0 w-full z-50`}
       >
-
         <nav className="bg-white shadow-md px-6 flex justify-between items-center relative">
-         
-          <NavLink to="/"> <img src="/logo.png" alt="Logo" className="w-40 xsm:w-24" /></NavLink>
+          <NavLink to="/">
+            {" "}
+            <img src="/logo.png" alt="Logo" className="w-40 xsm:w-24" />
+          </NavLink>
 
           {/* Desktop Links */}
           <ul className="hidden xsm:hidden lg:flex space-x-6 text-sm">
             <li>
-              <NavLink to="/" end className={({ isActive }) => (isActive ? "text-blue-600" : "")}>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+              >
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/Property" end className={({ isActive }) => (isActive ? "text-blue-600" : "")}>
+              <NavLink
+                to="/Property"
+                end
+                className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+              >
                 Property
               </NavLink>
             </li>
             <li>
-              <NavLink to="/Aboutus" className={({ isActive }) => (isActive ? "text-blue-600" : "")}>
+              <NavLink
+                to="/Aboutus"
+                className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+              >
                 About Us
               </NavLink>
             </li>
             <li>
-              <NavLink to="/Contactus" className={({ isActive }) => (isActive ? "text-blue-600" : "")}>
+              <NavLink
+                to="/Contactus"
+                className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+              >
                 Contact Us
               </NavLink>
             </li>
             <li>
-              <NavLink to="/Insight" className={({ isActive }) => (isActive ? "text-blue-600" : "")}>
-              Insight
+              <NavLink
+                to="/Insight"
+                className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+              >
+                Insight
               </NavLink>
             </li>
           </ul>
 
           {/* WhatsApp Button */}
-          <a href="https://wa.me/qr/S3LVDB3Y3SB3H1" className="hidden xsm:hidden lg:block">
+          <a
+            href="https://wa.me/qr/S3LVDB3Y3SB3H1"
+            className="hidden xsm:hidden lg:block"
+          >
             <button className="bg-[#0bbf41] text-white px-4 py-2 rounded-[2px] flex items-center gap-2">
               <FaWhatsapp /> Get Quote
             </button>
@@ -101,25 +122,41 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Property" className="py-2 block" onClick={toggleMenu}>
+                <NavLink
+                  to="/Property"
+                  className="py-2 block"
+                  onClick={toggleMenu}
+                >
                   Property
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Aboutus" className="py-2 block" onClick={toggleMenu}>
+                <NavLink
+                  to="/Aboutus"
+                  className="py-2 block"
+                  onClick={toggleMenu}
+                >
                   About Us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Contactus" className="py-2 block" onClick={toggleMenu}>
+                <NavLink
+                  to="/Contactus"
+                  className="py-2 block"
+                  onClick={toggleMenu}
+                >
                   Contact Us
                 </NavLink>
               </li>
               <li>
-              <NavLink to="/Insight" className="py-2 block" onClick={toggleMenu}>
-              Insight
-              </NavLink>
-            </li>
+                <NavLink
+                  to="/Insight"
+                  className="py-2 block"
+                  onClick={toggleMenu}
+                >
+                  Insight
+                </NavLink>
+              </li>
               <a href="https://wa.me/qr/S3LVDB3Y3SB3H1" className="py-2 block">
                 <button className="bg-[#0bbf41] text-white px-6 py-2 rounded-[2px] flex items-center gap-2">
                   <FaWhatsapp /> Get Quote
@@ -136,7 +173,7 @@ const Navbar = () => {
           <Route path="/Aboutus" element={<Aboutus />} />
           <Route path="/Property" element={<Property />} />
           <Route path="/Contactus" element={<Contact />} />
-          <Route path="/Insight" element={<Insight/>}/>
+          <Route path="/Insight" element={<Insight />} />
         </Routes>
       </div>
     </BrowserRouter>

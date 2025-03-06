@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import cityback from "../cta-bg.png";
 import {
   FaRupeeSign,
   FaFacebook,
@@ -19,8 +20,7 @@ import Footer from "./Footer";
 const residential = [
   {
     image: "city-1.webp",
-    heading:
-      "Ultra Luxury 4.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
+    heading: "Azura Residences by IGO",
     location: "United Arab Emirates",
     price: "7 Cr",
     area: "4500 sq ft",
@@ -30,8 +30,7 @@ const residential = [
   },
   {
     image: "city-2.jpg",
-    heading:
-      "Ultra Luxury 3.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
+    heading: "Bayz 102",
     location: "United Arab Emirates",
     price: "4.7 Cr",
     area: "2623 sq ft",
@@ -41,8 +40,7 @@ const residential = [
   },
   {
     image: "city-3.png",
-    heading:
-      "Ultra Luxury 3.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
+    heading: "Beach Residences at Siniya Island",
     location: "United Arab Emirates",
     price: "3 Cr",
     area: "3000 sq ft",
@@ -52,8 +50,7 @@ const residential = [
   },
   {
     image: "city-4.jpg",
-    heading:
-      "Luxury 4.5 BHK + Utility Apartment for Sale in Sector 79, Gurgaon",
+    heading: "Bliss Homes",
     location: "United Arab Emirates",
     price: "4 Cr",
     area: "5000 sq ft",
@@ -63,7 +60,7 @@ const residential = [
   },
   {
     image: "city-5.jpeg",
-    heading: "3 BHK Luxury 2394 SF United Arab Emirates",
+    heading: "Burj Azizi",
     location: "United Arab Emirates",
     price: "3 Cr",
     area: "2300 sq ft",
@@ -73,7 +70,7 @@ const residential = [
   },
   {
     image: "city-6.jpg",
-    heading: "2 BHK 1285 SF Luxury United Arab Emirates",
+    heading: "Laya Heights",
     location: "United Arab Emirates",
     price: "6 Cr",
     area: "5000 sq ft",
@@ -83,7 +80,7 @@ const residential = [
   },
   {
     image: "city-5.jpeg",
-    heading: "3 BHK Luxury 2394 SF United Arab Emirates",
+    heading: "Park Five by Deyaar",
     location: "United Arab Emirates",
     price: "3 Cr",
     area: "2300 sq ft",
@@ -113,8 +110,7 @@ const residential = [
   },
   {
     image: "city-2.jpg",
-    heading:
-      "Ultra Luxury 3.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
+    heading: "Parkway by Prestige One",
     location: "United Arab Emirates",
     price: "4.7 Cr",
     area: "2623 sq ft",
@@ -124,8 +120,7 @@ const residential = [
   },
   {
     image: "city-2.jpg",
-    heading:
-      "Ultra Luxury 3.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
+    heading: "Pelagos by IGO",
     location: "United Arab Emirates",
     price: "4.7 Cr",
     area: "2623 sq ft",
@@ -135,8 +130,7 @@ const residential = [
   },
   {
     image: "city-2.jpg",
-    heading:
-      "Ultra Luxury 3.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
+    heading: "Sidr Residences",
     location: "United Arab Emirates",
     price: "4.7 Cr",
     area: "2623 sq ft",
@@ -151,8 +145,7 @@ const residential = [
 const commercial = [
   {
     image: "city-1.webp",
-    heading:
-      "Ultra Luxury 4.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
+    heading: "Sky Residences",
     location: "United Arab Emirates",
     price: "7 Cr",
     area: "4500 sq ft",
@@ -162,8 +155,7 @@ const commercial = [
   },
   {
     image: "city-2.jpg",
-    heading:
-      "Ultra Luxury 3.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
+    heading: "South Garden",
     location: "United Arab Emirates",
     price: "4.7 Cr",
     area: "2623 sq ft",
@@ -173,8 +165,7 @@ const commercial = [
   },
   {
     image: "city-3.png",
-    heading:
-      "Ultra Luxury 3.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
+    heading: "The Pier residence",
     location: "United Arab Emirates",
     price: "3 Cr",
     area: "3000 sq ft",
@@ -184,8 +175,7 @@ const commercial = [
   },
   {
     image: "city-4.jpg",
-    heading:
-      "Luxury 4.5 BHK + Utility Apartment for Sale in Sector 79, Gurgaon",
+    heading: "Velora and Venera at The Valley",
     location: "United Arab Emirates",
     price: "4 Cr",
     area: "5000 sq ft",
@@ -193,89 +183,89 @@ const commercial = [
     room: "3",
     ptype: "Land",
   },
-  {
-    image: "city-5.jpeg",
-    heading: "3 BHK Luxury 2394 SF United Arab Emirates",
-    location: "United Arab Emirates",
-    price: "3 Cr",
-    area: "2300 sq ft",
-    flate: "2 BHK + Utility",
-    room: "2",
-    ptype: "Office",
-  },
-  {
-    image: "city-6.jpg",
-    heading: "2 BHK 1285 SF Luxury United Arab Emirates",
-    location: "United Arab Emirates",
-    price: "6 Cr",
-    area: "5000 sq ft",
-    flate: "4 BHK + Utility",
-    room: "4",
-    ptype: "Land",
-  },
-  {
-    image: "city-5.jpeg",
-    heading: "3 BHK Luxury 2394 SF United Arab Emirates",
-    location: "United Arab Emirates",
-    price: "3 Cr",
-    area: "2300 sq ft",
-    flate: "2 BHK + Utility",
-    room: "2",
-    ptype: "Office",
-  },
-  {
-    image: "city-5.jpeg",
-    heading: "3 BHK Luxury 2394 SF United Arab Emirates",
-    location: "United Arab Emirates",
-    price: "3 Cr",
-    area: "2300 sq ft",
-    flate: "2 BHK + Utility",
-    room: "2",
-    ptype: "Office",
-  },
-  {
-    image: "city-5.jpeg",
-    heading: "3 BHK Luxury 2394 SF United Arab Emirates",
-    location: "United Arab Emirates",
-    price: "3 Cr",
-    area: "2300 sq ft",
-    flate: "2 BHK + Utility",
-    room: "2",
-    ptype: "Office",
-  },
-  {
-    image: "city-2.jpg",
-    heading:
-      "Ultra Luxury 3.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
-    location: "United Arab Emirates",
-    price: "4.7 Cr",
-    area: "2623 sq ft",
-    flate: "3.5 BHK + Utility ",
-    room: "3",
-    ptype: "Land",
-  },
-  {
-    image: "city-2.jpg",
-    heading:
-      "Ultra Luxury 3.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
-    location: "United Arab Emirates",
-    price: "4.7 Cr",
-    area: "2623 sq ft",
-    flate: "3.5 BHK + Utility ",
-    room: "3",
-    ptype: "Land",
-  },
-  {
-    image: "city-2.jpg",
-    heading:
-      "Ultra Luxury 3.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
-    location: "United Arab Emirates",
-    price: "4.7 Cr",
-    area: "2623 sq ft",
-    flate: "3.5 BHK + Utility ",
-    room: "3",
-    ptype: "Land",
-  },
+  // {
+  //   image: "city-5.jpeg",
+  //   heading: "3 BHK Luxury 2394 SF United Arab Emirates",
+  //   location: "United Arab Emirates",
+  //   price: "3 Cr",
+  //   area: "2300 sq ft",
+  //   flate: "2 BHK + Utility",
+  //   room: "2",
+  //   ptype: "Office",
+  // },
+  // {
+  //   image: "city-6.jpg",
+  //   heading: "2 BHK 1285 SF Luxury United Arab Emirates",
+  //   location: "United Arab Emirates",
+  //   price: "6 Cr",
+  //   area: "5000 sq ft",
+  //   flate: "4 BHK + Utility",
+  //   room: "4",
+  //   ptype: "Land",
+  // },
+  // {
+  //   image: "city-5.jpeg",
+  //   heading: "3 BHK Luxury 2394 SF United Arab Emirates",
+  //   location: "United Arab Emirates",
+  //   price: "3 Cr",
+  //   area: "2300 sq ft",
+  //   flate: "2 BHK + Utility",
+  //   room: "2",
+  //   ptype: "Office",
+  // },
+  // {
+  //   image: "city-5.jpeg",
+  //   heading: "3 BHK Luxury 2394 SF United Arab Emirates",
+  //   location: "United Arab Emirates",
+  //   price: "3 Cr",
+  //   area: "2300 sq ft",
+  //   flate: "2 BHK + Utility",
+  //   room: "2",
+  //   ptype: "Office",
+  // },
+  // {
+  //   image: "city-5.jpeg",
+  //   heading: "3 BHK Luxury 2394 SF United Arab Emirates",
+  //   location: "United Arab Emirates",
+  //   price: "3 Cr",
+  //   area: "2300 sq ft",
+  //   flate: "2 BHK + Utility",
+  //   room: "2",
+  //   ptype: "Office",
+  // },
+  // {
+  //   image: "city-2.jpg",
+  //   heading:
+  //     "Ultra Luxury 3.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
+  //   location: "United Arab Emirates",
+  //   price: "4.7 Cr",
+  //   area: "2623 sq ft",
+  //   flate: "3.5 BHK + Utility ",
+  //   room: "3",
+  //   ptype: "Land",
+  // },
+  // {
+  //   image: "city-2.jpg",
+  //   heading:
+  //     "Ultra Luxury 3.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
+  //   location: "United Arab Emirates",
+  //   price: "4.7 Cr",
+  //   area: "2623 sq ft",
+  //   flate: "3.5 BHK + Utility ",
+  //   room: "3",
+  //   ptype: "Land",
+  // },
+  // {
+  //   image: "city-2.jpg",
+  //   heading:
+  //     "Ultra Luxury 3.5 BHK + Utility Apartment for Sale in Sector 37D, Gurgaon",
+  //   location: "United Arab Emirates",
+  //   price: "4.7 Cr",
+  //   area: "2623 sq ft",
+  //   flate: "3.5 BHK + Utility ",
+  //   room: "3",
+  //   ptype: "Land",
+  // },
 
   // Add more commercial items here...
 ];
@@ -300,7 +290,9 @@ const Property = () => {
     <div className="font-roboto xsm:overflow-hidden xsm:-mt-10">
       {/* Header Section */}
       <div className="bg-[#003550] w-full h-full flex items-center flex-col p-4 gap-2">
-        <h1 className="text-3xl tracking-wider text-white xsm:text-base">Property List</h1>
+        <h1 className="text-3xl tracking-wider text-white xsm:text-base">
+          Property List
+        </h1>
         <p className="text-white text-xs tracking-wider xsm:text-[10px]">
           <NavLink to="/" className="text-white">
             HOME
@@ -399,7 +391,9 @@ const Property = () => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-6 p-4">
-                  <h1 className="text-lg font-medium xsm:text-sm">{item.heading}</h1>
+                  <h1 className="text-lg font-medium xsm:text-sm">
+                    {item.heading}
+                  </h1>
                   <p className="flex gap-1 text-sm text-gray-400 xsm:text-xs">
                     <FaLocationDot className="text-[#003550] xsm:text-xs text-lg" />
                     {item.location}
@@ -523,6 +517,31 @@ const Property = () => {
             {showAllCommercial ? "Show Less" : "Show More"}
           </button>
         )}
+      </div>
+      {/* Bottom CTA Section */}
+      <div className="bg-[#003550] mt-10 text-white text-center py-16 relative">
+        <div
+          className="absolute bottom-0 left-0 right-0 opacity-90 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${cityback})`, height: "100%" }}
+        ></div>
+
+        <div className="relative z-10 flex lg:flex-row xsm:flex-col md:flex-col md:gap-10 md:px-10 xsm:gap-10 xsm:px-8 justify-center gap-32">
+          <div className=" text-start">
+            <h2 className="text-4xl xsm:text-base font-bold">
+              Find Your Dream Property Today <br /> — Let’s Get Started!
+            </h2>
+            <p className="mt-4 text-lg text-[#d1d5db] xsm:text-xs">
+              Start your real estate journey with us now and discover the
+              perfect <br /> property that suits your lifestyle and budget.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center">
+            <button className=" bg-white  text-black px-3 py-2 text-sm font-bold  rounded-full shadow-lg hover:bg-[#f5f3f1] transition duration-300">
+              FIND NOW! →
+            </button>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>

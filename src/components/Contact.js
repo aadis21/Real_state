@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import cityback from "../cta-bg.png";
 import {
   FaFacebook,
   FaWhatsapp,
@@ -107,25 +108,25 @@ const Contact = () => {
                 <div className="bg-[#003550] p-2 text-center rounded-[3px]">
                   <FaLocationDot className="text-white text-lg" />
                 </div>
-                B-210, 2nd Floor, Elante Offices
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
-                  <FaBuilding className="text-white text-lg" />
+                4-M17 ,M-2 BN COMPLEX , AL MUTEENA DEIRA
+                <div className="flex items-center gap-2">
+                  <div className="bg-[#003550] p-2 text-center rounded-[3px]">
+                    <FaBuilding className="text-white text-lg" />
+                  </div>
+                  DUBAI , UAE
                 </div>
-                Industrial Area Phase - 1, Chandigarh
               </div>
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <div className="bg-[#003550] p-2 text-center rounded-[3px]">
                   <FaRegFlag className="text-white text-lg" />
                 </div>
                 Postal Code - 160002, India
-              </div>
+              </div> */}
               <div className="flex items-center gap-2">
                 <div className="bg-[#003550] p-2 text-center rounded-[3px]">
                   <FaWhatsapp className="text-white text-lg" />
                 </div>
-                Whatsapp : 918558806719
+                Whatsapp :+971552959123
               </div>
               <div className="flex items-center gap-2">
                 <div className="bg-[#003550] p-2 text-center rounded-[3px]">
@@ -155,96 +156,7 @@ const Contact = () => {
             </LoadScript>
           </div>
         </div>
-        <div className="flex xsm:flex-col xsm:gap-4 xsm:p-5 md:p-4 lg:p-10">
-          <div className="flex  flex-col gap-3 xsm:w-full w-[50%]">
-            <h1 className="font-semibold text-2xl py-4 text-start">
-              Maharashtra (Corporate Office)
-            </h1>
-            <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
-                  <FaLocationDot className="text-white text-lg" />
-                </div>
-                Supreme Headquarters, Office 1003, 10th Floor Junction of 14th
-                and <br />
-                33rd road
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
-                  <FaBuilding className="text-white text-lg" />
-                </div>
-                Bandra,West Mumbai, Maharashtra
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
-                  <FaRegFlag className="text-white text-lg" />
-                </div>
-                Postal Code - 400050, Indian
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
-                  <FaWhatsapp className="text-white text-lg" />
-                </div>
-                Whatsapp : 918558806719
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
-                  <IoCallSharp className="text-white text-lg" />
-                </div>
-                226-509-2230, +91-8288971800
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
-                  <MdAlternateEmail className="text-white text-lg" />
-                </div>
-                Email: support@alketbirealestate.com
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col gap-3 xsm:w-full w-[50%]">
-            <h1 className="font-semibold text-2xl py-4 text-start">
-              Gurgaon (Branch Office)
-            </h1>
-            <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
-                  <FaLocationDot className="text-white text-lg" />
-                </div>
-                314, 3rd Floor, Tower 4, DLF Corporate Greens
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
-                  <FaBuilding className="text-white text-lg" />
-                </div>
-                Sector 74, Gurgaon
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
-                  <FaRegFlag className="text-white text-lg" />
-                </div>
-                Postal Code - 122004, Indian
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
-                  <FaWhatsapp className="text-white text-lg" />
-                </div>
-                Whatsapp : 918558806719
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
-                  <IoCallSharp className="text-white text-lg" />
-                </div>
-                124-518-1170, +91-8558806708
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-[#003550] p-2 text-center rounded-[3px]">
-                  <MdAlternateEmail className="text-white text-lg" />
-                </div>
-                Email: support@alketbirealestate.com
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div className="p-10">
           <h1 className="text-2xl font-bold text-center mb-6">
             Submit Enquiry
@@ -356,6 +268,31 @@ const Contact = () => {
               </button>
             </div>
           </form>
+        </div>
+      </div>
+      {/* Bottom CTA Section */}
+      <div className="bg-[#003550] mt-10 text-white text-center py-16 relative">
+        <div
+          className="absolute bottom-0 left-0 right-0 opacity-90 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${cityback})`, height: "100%" }}
+        ></div>
+
+        <div className="relative z-10 flex lg:flex-row xsm:flex-col md:flex-col md:gap-10 md:px-10 xsm:gap-10 xsm:px-8 justify-center gap-32">
+          <div className=" text-start">
+            <h2 className="text-4xl xsm:text-base font-bold">
+              Find Your Dream Property Today <br /> — Let’s Get Started!
+            </h2>
+            <p className="mt-4 text-lg text-[#d1d5db] xsm:text-xs">
+              Start your real estate journey with us now and discover the
+              perfect <br /> property that suits your lifestyle and budget.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center">
+            <button className=" bg-white  text-black px-3 py-2 text-sm font-bold  rounded-full shadow-lg hover:bg-[#f5f3f1] transition duration-300">
+              FIND NOW! →
+            </button>
+          </div>
         </div>
       </div>
       <Footer />
