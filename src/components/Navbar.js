@@ -6,6 +6,7 @@ import Home from "./Home";
 import Property from "./Property";
 import Contact from "./Contact";
 import Insight from "./Insight";
+import WhyUs from "./WhyUs";
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -42,12 +43,11 @@ const Navbar = () => {
       >
         <nav className="bg-white shadow-md px-6 flex justify-between items-center relative">
           <NavLink to="/">
-            {" "}
-            <img src="/logo.png" alt="Logo" className="w-40 xsm:w-24" />
+            <img src="/logo.png" alt="Logo" className="w-52 h-24 xsm:h-16 xsm:w-24" />
           </NavLink>
 
           {/* Desktop Links */}
-          <ul className="hidden xsm:hidden lg:flex space-x-6 text-sm">
+          <ul className="hidden xsm:hidden lg:flex space-x-16 text-lg font-bold">
             <li>
               <NavLink
                 to="/"
@@ -90,6 +90,14 @@ const Navbar = () => {
                 Insight
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/WhyUS"
+                className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+              >
+                Why US ?
+              </NavLink>
+            </li>
           </ul>
 
           {/* WhatsApp Button */}
@@ -97,7 +105,7 @@ const Navbar = () => {
             href="https://wa.me/qr/S3LVDB3Y3SB3H1"
             className="hidden xsm:hidden lg:block"
           >
-            <button className="bg-[#0bbf41] text-white px-4 py-2 rounded-[2px] flex items-center gap-2">
+            <button className="bg-[#0bbf41] text-white px-4 py-2 rounded-xl flex items-center gap-2">
               <FaWhatsapp /> Get Quote
             </button>
           </a>
@@ -157,8 +165,17 @@ const Navbar = () => {
                   Insight
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to="/WhyUS"
+                  className="py-2 block"
+                  onClick={toggleMenu}
+                >
+                  Why US ?
+                </NavLink>
+              </li>
               <a href="https://wa.me/qr/S3LVDB3Y3SB3H1" className="py-2 block">
-                <button className="bg-[#0bbf41] text-white px-6 py-2 rounded-[2px] flex items-center gap-2">
+                <button className="bg-[#0bbf41] text-white px-6 py-2 rounded-xl flex items-center gap-2">
                   <FaWhatsapp /> Get Quote
                 </button>
               </a>
@@ -174,6 +191,7 @@ const Navbar = () => {
           <Route path="/Property" element={<Property />} />
           <Route path="/Contactus" element={<Contact />} />
           <Route path="/Insight" element={<Insight />} />
+          <Route path="/WhyUs" element={<WhyUs/>}/>
         </Routes>
       </div>
     </BrowserRouter>

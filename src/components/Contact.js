@@ -109,12 +109,12 @@ const Contact = () => {
                   <FaLocationDot className="text-white text-lg" />
                 </div>
                 4-M17 ,M-2 BN COMPLEX , AL MUTEENA DEIRA
-                <div className="flex items-center gap-2">
-                  <div className="bg-[#9A7B4F] p-2 text-center rounded-[3px]">
-                    <FaBuilding className="text-white text-lg" />
-                  </div>
-                  DUBAI , UAE
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="bg-[#9A7B4F] p-2 text-center rounded-[3px]">
+                  <FaBuilding className="text-white text-lg" />
                 </div>
+                DUBAI , UAE
               </div>
               {/* <div className="flex items-center gap-2">
                 <div className="bg-[#9A7B4F] p-2 text-center rounded-[3px]">
@@ -142,136 +142,139 @@ const Contact = () => {
               </div>
             </div>
           </div>
+          <div className="p-10 rounded-3xl w-[30%] xsm:w-full bg-[#9A7B4F]">
+            <h1 className="text-4xl text-white xsm:text-base font-extrabold  mb-6">
+            Contect              
+             </h1>
+            <form
+              onSubmit={handleSubmit}
+              className="grid grid-cols-1 md:grid-cols-2 gap-4"
+            >
+              {/* Name Field */}
+              <div className="flex bg-[#9A7B4F] items-center border border-gray-300 rounded px-3">
+                <i className="  mr-3 ">
+                  <FaUser  className="text-white"/>
+                </i>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Name"
+                  className="w-full bg-[#9A7B4F] outline-none py-2"
+                  required
+                />
+              </div>
 
-          {/* Map Section */}
-          <div className="map w-[50%] xsm:w-full">
-            <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
-              <GoogleMap
-                mapContainerStyle={containerStyle}
-                center={center}
-                zoom={15}
-              >
-                {/* Optional: Add markers or other map features here */}
-              </GoogleMap>
-            </LoadScript>
+              {/* Email Field */}
+              <div className="flex bg-[#9A7B4F] items-center border border-gray-300 rounded px-3">
+                <i className=" mr-3">
+                  <IoMail className="text-white"/>
+                </i>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Email ID"
+                  className="w-full bg-[#9A7B4F] outline-none py-2"
+                  required
+                />
+              </div>
+
+              {/* Contact Field */}
+              <div className="flex bg-[#9A7B4F] items-center border border-gray-300 rounded px-3">
+                <i className=" mr-3">
+                  <IoCallSharp  className="text-white"/>
+                </i>
+                <input
+                  type="tel"
+                  name="contact"
+                  value={formData.contact}
+                  onChange={handleChange}
+                  placeholder="Contact No"
+                  className="w-full bg-[#9A7B4F] outline-none py-2"
+                  required
+                />
+              </div>
+
+              {/* City Field */}
+              <div className="flex bg-[#9A7B4F] items-center border border-gray-300 rounded px-3">
+                <i className="  mr-3">
+                  <FaLocationDot className="text-white"/>
+                </i>
+                <input
+                  type="text"
+                  name="city"
+                  value={formData.city}
+                  onChange={handleChange}
+                  placeholder="City"
+                  className="w-full bg-[#9A7B4F] outline-none py-2"
+                  required
+                />
+              </div>
+
+              {/* Subject Field */}
+              <div className="flex bg-[#9A7B4F] items-center border border-gray-300 rounded px-3 md:col-span-2">
+                <i className=" mr-3">
+                  <FaTag  className="text-white"/>
+                </i>
+                <input
+                  type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  placeholder="Subject"
+                  className="w-full bg-[#9A7B4F] outline-none py-2"
+                  required
+                />
+              </div>
+
+              {/* Message Field */}
+              <div className="md:col-span-2 bg-[#9A7B4F]">
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Message"
+                  className="w-full border bg-[#9A7B4F] border-gray-300 rounded outline-none py-2 px-3"
+                  rows="4"
+                  required
+                />
+              </div>
+
+              {/* Submit Button */}
+              <div className="md:col-span-2 text-center">
+                <button
+                  type="submit"
+                  className="bg-[#9A7B4F] text-white px-6 py-2 rounded hover:bg-blue-600 transition-all duration-300"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
           </div>
         </div>
 
-        <div className="p-10">
-          <h1 className="text-2xl font-bold text-center mb-6">
-            Submit Enquiry
-          </h1>
-          <form
-            onSubmit={handleSubmit}
-            className="grid grid-cols-1 md:grid-cols-2 gap-4"
-          >
-            {/* Name Field */}
-            <div className="flex items-center border border-gray-300 rounded px-3">
-              <i className="  mr-3">
-                <FaUser />
-              </i>
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Name"
-                className="w-full outline-none py-2"
-                required
-              />
-            </div>
-
-            {/* Email Field */}
-            <div className="flex items-center border border-gray-300 rounded px-3">
-              <i className=" mr-3">
-                <IoMail />
-              </i>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Email ID"
-                className="w-full outline-none py-2"
-                required
-              />
-            </div>
-
-            {/* Contact Field */}
-            <div className="flex items-center border border-gray-300 rounded px-3">
-              <i className=" mr-3">
-                <IoCallSharp />
-              </i>
-              <input
-                type="tel"
-                name="contact"
-                value={formData.contact}
-                onChange={handleChange}
-                placeholder="Contact No"
-                className="w-full outline-none py-2"
-                required
-              />
-            </div>
-
-            {/* City Field */}
-            <div className="flex items-center border border-gray-300 rounded px-3">
-              <i className="  mr-3">
-                <FaLocationDot />
-              </i>
-              <input
-                type="text"
-                name="city"
-                value={formData.city}
-                onChange={handleChange}
-                placeholder="City"
-                className="w-full outline-none py-2"
-                required
-              />
-            </div>
-
-            {/* Subject Field */}
-            <div className="flex items-center border border-gray-300 rounded px-3 md:col-span-2">
-              <i className=" mr-3">
-                <FaTag />
-              </i>
-              <input
-                type="text"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                placeholder="Subject"
-                className="w-full outline-none py-2"
-                required
-              />
-            </div>
-
-            {/* Message Field */}
-            <div className="md:col-span-2">
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Message"
-                className="w-full border border-gray-300 rounded outline-none py-2 px-3"
-                rows="4"
-                required
-              />
-            </div>
-
-            {/* Submit Button */}
-            <div className="md:col-span-2 text-center">
-              <button
-                type="submit"
-                className="bg-[#9A7B4F] text-white px-6 py-2 rounded hover:bg-blue-600 transition-all duration-300"
+        {/* Map Section */}
+        <div className="map w-full">
+          <LoadScript
+                googleMapsApiKey="AIzaSyAmB63Ixx1tDyUyEvQ4KE1ymOM2YANXPn0"
+                libraries={["places"]}
+                id="google-map-load-script"
               >
-                Send Message
-              </button>
-            </div>
-          </form>
+            <GoogleMap
+              mapContainerStyle={containerStyle}
+              center={center}
+              zoom={15}
+            >
+              {/* Optional: Add markers or other map features here */}
+            </GoogleMap>
+          </LoadScript>
         </div>
       </div>
       {/* Bottom CTA Section */}
-      <div className="bg-[#9A7B4F] mt-10 text-white text-center py-16 relative">
+      <div className="bg-[#9A7B4F] text-white text-center py-16 relative">
         <div
           className="absolute bottom-0 left-0 right-0 opacity-90 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${cityback})`, height: "100%" }}

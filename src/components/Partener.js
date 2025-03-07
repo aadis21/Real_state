@@ -65,7 +65,7 @@ const Partner = () => {
       </div>
 
       {/* Slider */}
-      <Slider {...settings} className="p-16">
+      <Slider {...settings} className="p-16 xsm:p-8">
         {images.map((image, index) => (
           <div key={index} className="flex items-center justify-center p-2">
             <div className="bg-white rounded-lg shadow-lg flex items-center justify-center">

@@ -21,9 +21,9 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="Your mobile number"
-                  className="px-4 md:px-2 md:py-1 py-2 bg-gray-100 rounded-l-lg w-full"
+                  className="px-4 md:px-2 md:py-1 py-2 bg-gray-100 rounded-l-2xl w-full"
                 />
-                <button className="bg-[#9A7B4F] text-white md:px-2 md:py-1 px-4 py-2 rounded-r-lg whitespace-nowrap flex items-center">
+                <button className="bg-[#9A7B4F] text-white md:px-2 md:py-1 px-4 py-2 rounded-r-2xl whitespace-nowrap flex items-center">
                   SUBSCRIBE
                   <span className="ml-2">→</span>
                 </button>
@@ -146,6 +146,18 @@ const Footer = () => {
                   }
                 >
                   Insight
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/WhyUs"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-blue-600"
+                      : "text-gray-700 hover:text-blue-900"
+                  }
+                >
+                  Why Us ?
                 </NavLink>
               </li>
             </ul>
