@@ -102,7 +102,7 @@ const Navbar = () => {
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/qr/S3LVDB3Y3SB3H1"
+            href="https://wa.me/971582450101"
             className="hidden xsm:hidden lg:block"
           >
             <button className="bg-[#0bbf41] text-white px-4 py-2 rounded-xl flex items-center gap-2">
@@ -174,7 +174,7 @@ const Navbar = () => {
                   Why US ?
                 </NavLink>
               </li>
-              <a href="https://wa.me/qr/S3LVDB3Y3SB3H1" className="py-2 block">
+              <a href="https://wa.me/971582450101" className="py-2 block">
                 <button className="bg-[#0bbf41] text-white px-6 py-2 rounded-xl flex items-center gap-2">
                   <FaWhatsapp /> Get Quote
                 </button>

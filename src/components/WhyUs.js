@@ -34,6 +34,34 @@ const WhyUs = () => {
         "7DRE arranges property viewings for the customer to explore selected properties firsthand.",
       icon: <BsKey />,
     },
+    {
+        number: "02",
+        title: "Market Analysis",
+        description:
+          "7DRE conducts a comprehensive market analysis to identify suitable properties that match the customer's criteria.",
+        icon: <BsGraphUp />,
+      },
+      {
+        number: "04",
+        title: "Viewings",
+        description:
+          "7DRE arranges property viewings for the customer to explore selected properties firsthand.",
+        icon: <BsKey />,
+      },
+      {
+        number: "02",
+        title: "Market Analysis",
+        description:
+          "7DRE conducts a comprehensive market analysis to identify suitable properties that match the customer's criteria.",
+        icon: <BsGraphUp />,
+      },
+      {
+        number: "01",
+        title: "Understanding Requirements",
+        description:
+          "At 7DRE, we gather information about their specific requirements, including budget, preferred location, property type, size, amenities, and any other preferences.",
+        icon: <BsClipboardData />,
+      },
   ];
   const services = [
     {
@@ -79,14 +107,14 @@ const WhyUs = () => {
   return (
     <div className=" overflow-hidden">
       <div className="bg-[#f9f6f6] py-20 xsm:py-7 md:py-10 flex flex-col items-center">
-        <div className="max-w-6xl md:w-[70%] xsm:w-[70%] mx-auto rounded-2xl overflow-hidden shadow-lg">
+        <div className=" lg:w-[80%] md:w-[70%] xsm:w-[70%] mx-auto rounded-2xl overflow-hidden shadow-lg">
           <img
             src="why-us-banner.png"
             alt="Dubai Skyline"
             className="w-full object-cover rounded-t-2xl"
           />
         </div>
-        <div className="p-10 xsm:flex-col lg:flex md:flex-col justify-center items-center">
+        <div className="p-10 xsm:flex-col lg:flex-row flex md:flex-col justify-center items-center">
           <h2 className="text-4xl font-extrabold mb-6 xsm:text-sm xsm:w-full w-[40%]">Why 7DRE</h2>
           <p className="text-lg text-gray-700 xsm:w-full xsm:text-xs text-justify leading-relaxed w-[40%]">
             At 7DRE, we put you first. Our customer-centric approach ensures your needs are our priority.

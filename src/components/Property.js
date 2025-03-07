@@ -10,6 +10,7 @@ import {
   FaBuilding,
   FaBed,
 } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
 import { IoCallSharp } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { FaLink } from "react-icons/fa";
@@ -300,18 +301,28 @@ const Property = () => {
           / PROPERTY LIST
         </p>
         <ul className="flex no-underline gap-3">
-          <li className="bg-white p-2 rounded">
+          <a
+            href="https://www.facebook.com/share/1DRiY8jDfo/?mibextid=wwXIfr"
+            className="bg-white p-2 rounded"
+          >
             <FaFacebook className="text-blue-900" />
-          </li>
-          <li className="bg-white p-2 rounded">
+          </a>
+
+          <a href="https://wa.me/971582450101" className="bg-white p-2 rounded">
             <FaWhatsapp className="text-green-500" />
-          </li>
-          <li className="bg-white p-2 rounded">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jashan-singh-99815b1b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            className="bg-white p-2 rounded"
+          >
             <FaLinkedin className="text-blue-600" />
-          </li>
-          <li className="bg-white p-2 rounded">
-            <FaPinterest className="text-red-700" />
-          </li>
+          </a>
+          <a
+            href="https://www.instagram.com/jashan_dxb_realtor?igsh=cTNjbmphaDh5ZHQ1&utm_source=qr"
+            className="bg-white p-2 rounded"
+          >
+            <BsInstagram className="text-[#ca3059]" />
+          </a>
         </ul>
       </div>
 
@@ -439,57 +450,59 @@ const Property = () => {
             .map((item, index) => (
               <div
                 key={index}
-                className="flex gap-5 shadow-md hover:shadow-xl transition-all duration-700"
+                className="flex xsm:flex-col xsm:gap-2 gap-5 shadow-md hover:shadow-xl transition-all duration-700"
               >
-                <div className="relative group hover:cursor-pointer overflow-hidden w-[35%]">
+                <div className="relative group hover:cursor-pointer overflow-hidden xsm:w-full w-[35%]">
                   <img
                     src={item.image}
                     alt={item.heading}
                     className="w-full h-full object-cover hover:scale-125 transition duration-1000 shadow-inner"
                   />
                   <div className="absolute top-4 right-4 hover:cursor-pointer z-10 flex gap-2">
-                    <p className="bg-[#9A7B4F] text-white px-[9px] py-[3px] text-sm tracking-tight items-center rounded-[2px]">
+                    <p className="bg-[#9A7B4F] text-white xsm:text-xs px-[9px] py-[3px] text-sm  tracking-tight items-center rounded-[2px]">
                       {item.ptype}
                     </p>
-                    <p className="bg-[#FA6742] text-white px-[9px] py-[3px] text-sm tracking-tight items-center rounded-[2px]">
+                    <p className="bg-[#FA6742] text-white xsm:text-xs px-[9px] py-[3px] text-sm tracking-tight items-center rounded-[2px]">
                       Sale
                     </p>
                   </div>
                 </div>
                 <div className="flex flex-col gap-6 p-4">
-                  <h1 className="text-lg font-medium">{item.heading}</h1>
-                  <p className="flex gap-1 text-sm text-gray-400">
-                    <FaLocationDot className="text-[#9A7B4F] text-lg" />
+                  <h1 className="text-lg font-medium xsm:text-sm">
+                    {item.heading}
+                  </h1>
+                  <p className="flex gap-1 text-sm xsm:text-xs text-gray-400">
+                    <FaLocationDot className="text-[#9A7B4F] xsm:text-xs text-lg" />
                     {item.location}
                   </p>
                   <div className="grid grid-cols-2 gap-4">
-                    <p className="flex items-center gap-1">
+                    <p className="flex items-center xsm:text-xs gap-1">
                       <FaRupeeSign className="text-[#9A7B4F]" />
                       {item.price}
                     </p>
-                    <p className="flex items-center gap-1">
+                    <p className="flex items-center xsm:text-xs gap-1">
                       <FaArrowsAlt className="text-[#9A7B4F]" />
                       {item.area}
                     </p>
-                    <p className="flex items-center gap-1">
+                    <p className="flex items-center xsm:text-xs gap-1">
                       <FaBuilding className="text-[#9A7B4F]" />
                       {item.flate}
                     </p>
-                    <p className="flex items-center gap-1">
+                    <p className="flex items-center xsm:text-xs gap-1">
                       <FaBed className="text-[#9A7B4F]" />
                       {item.room}
                     </p>
                   </div>
                   <div className="flex gap-1">
-                    <button className="bg-[#0bbf41] text-white flex items-center px-3 rounded-[3px] py-2 gap-1">
+                    <button className="bg-[#0bbf41] xsm:text-xs text-white flex items-center px-3 rounded-[3px] py-2 gap-1">
                       <FaWhatsapp className="text-white" />
                       Quote
                     </button>
-                    <button className="bg-[#9A7B4F] text-white flex items-center px-3 rounded-[3px] py-2 gap-1">
+                    <button className="bg-[#9A7B4F] xsm:text-xs text-white flex items-center px-3 rounded-[3px] py-2 gap-1">
                       <IoCallSharp className="text-white" />
                       Call Us
                     </button>
-                    <button className="bg-[#9A7B4F] text-white flex items-center px-3 rounded-[3px] py-2 gap-1">
+                    <button className="bg-[#9A7B4F] xsm:text-xs text-white flex items-center px-3 rounded-[3px] py-2 gap-1">
                       <FaLink className="text-white" />
                       Visit
                     </button>

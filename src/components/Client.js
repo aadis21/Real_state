@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const testimonials = [
   {
@@ -43,6 +43,28 @@ const TestimonialsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayCount, setDisplayCount] = useState(2);
   
+  // Add a window resize handler to adjust the display count based on screen size
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setDisplayCount(1);
+      } else {
+        setDisplayCount(2);
+      }
+    };
+    
+    // Set initial display count
+    handleResize();
+    
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+    
+    // Clean up
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
   // Calculate visible testimonials
   const visibleTestimonials = [];
   for (let i = 0; i < displayCount; i++) {
@@ -76,18 +98,17 @@ const TestimonialsSection = () => {
   return (
     <div className="relative py-20 px-4 max-w-6xl mx-auto">
       
-      
       {/* Section Heading */}
       <div className="relative mb-12 text-center">
         <h2 className="text-4xl xsm:text-base font-bold inline-block">
-          What people Think <span className="text-rose-500 xsm:text-base relative">About Us
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-rose-500"></span>
+          What people Think <span className="text-[#9A7B4F] xsm:text-base relative">About Us
+            <span className="absolute bottom-0 left-0 w-full h-1 bg-[#9A7B4F]"></span>
           </span>
         </h2>
       </div>
       
       {/* Testimonial Cards Container */}
-      <div className="relative flex md:p-10  items-center justify-center">
+      <div className="relative flex md:p-10 items-center justify-center">
         {/* Left Navigation Button */}
         <button 
           onClick={handlePrev}
@@ -99,8 +120,8 @@ const TestimonialsSection = () => {
           </svg>
         </button>
         
-        {/* Testimonial Cards */}
-        <div className="flex xsm:flex-col xsm:space-x-3 items-center space-x-6 justify-center">
+        {/* Testimonial Cards */} 
+        <div className="flex flex-col md:flex-row items-center md:space-x-6 space-y-6 md:space-y-0 justify-center">
           {visibleTestimonials.map((testimonial) => (
             <div key={testimonial.id} className="bg-white rounded-lg h-[300px] w-[300px] shadow-lg p-6 max-w-md">
               {/* Rating and Date */}
@@ -116,7 +137,7 @@ const TestimonialsSection = () => {
               
               {/* Author Info */}
               <div className="flex items-center">
-                <div className=" mr-4">
+                <div className="mr-4">
                   <img src={testimonial.avatar} alt={testimonial.name} className="rounded-full w-12 h-12" />
                 </div>
                 <div>
@@ -139,8 +160,6 @@ const TestimonialsSection = () => {
           </svg>
         </button>
       </div>
-      
-      
     </div>
   );
 };

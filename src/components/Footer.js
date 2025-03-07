@@ -32,12 +32,19 @@ const Footer = () => {
 
             <div className="flex space-x-4 md:space-x-2">
               {/* Social icons unchanged */}
-              <a href="#" className="text-gray-600 hover:text-gray-900">
+              <a
+                href="https://www.facebook.com/share/1DRiY8jDfo/?mibextid=wwXIfr 
+"
+                className="text-gray-600 hover:text-gray-900"
+              >
                 <span className="w-8 h-8 inline-flex items-center justify-center border border-gray-300 rounded-full">
                   f
                 </span>
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
+              <a
+                href="https://www.instagram.com/jashan_dxb_realtor?igsh=cTNjbmphaDh5ZHQ1&utm_source=qr"
+                className="text-gray-600 hover:text-gray-900"
+              >
                 <span className="w-8 h-8 inline-flex items-center justify-center border border-gray-300 rounded-full">
                   <svg
                     width="16"
@@ -50,24 +57,21 @@ const Footer = () => {
                   </svg>
                 </span>
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
-                <span className="w-8 h-8 inline-flex items-center justify-center border border-gray-300 rounded-full">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-                  </svg>
-                </span>
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
+
+              <a
+                href="https://www.linkedin.com/in/jashan-singh-99815b1b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+"
+                className="text-gray-600 hover:text-gray-900"
+              >
                 <span className="w-8 h-8 inline-flex items-center justify-center border border-gray-300 rounded-full">
                   in
                 </span>
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
+              <a
+                href="wa.me/971582450101
+"
+                className="text-gray-600 hover:text-gray-900"
+              >
                 <span className="w-8 h-8 inline-flex items-center justify-center border border-gray-300 rounded-full">
                   <svg
                     width="16"
@@ -83,9 +87,9 @@ const Footer = () => {
           </div>
 
           {/* Useful Links */}
-          <div className="w-full md:w-1/4 mt-6 md:mt-0">
-            <h3 className="font-semibold text-gray-900 mb-4">Useful links</h3>
-            <ul className="space-y-2">
+          <div className="w-full md:w-1/4 flex items-center justify-between xsm:w-full xsm:mt-0   mt-6 md:mt-0">
+            <ul className="space-y-2 xsm:w-full">
+              <h3 className="font-semibold text-gray-900 mb-4">Useful links</h3>
               <li>
                 <NavLink
                   to="/"
@@ -161,28 +165,27 @@ const Footer = () => {
                 </NavLink>
               </li>
             </ul>
-          </div>
-
-          {/* Other Links */}
-          <div className="w-full md:w-1/4 mt-6 md:mt-0">
-            <h3 className="font-semibold text-gray-900 mb-4">Other links</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-700 hover:text-blue-900">
-                  Privacy-Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-700 hover:text-blue-900">
-                  Cookies Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-700 hover:text-blue-900">
-                  Terms of Use
-                </a>
-              </li>
-            </ul>
+            {/* Other Links */}
+            <div className="w-full xsm:w-full md:w-1/4 mt-6 xsm:mt-0 md:mt-0">
+              <h3 className="font-semibold text-gray-900 mb-4">Other links</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#" className="text-gray-700 hover:text-blue-900">
+                    Privacy-Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-700 hover:text-blue-900">
+                    Cookies Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-700 hover:text-blue-900">
+                    Terms of Use
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* Contact Information */}

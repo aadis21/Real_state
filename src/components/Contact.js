@@ -15,6 +15,7 @@ import { NavLink } from "react-router-dom";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import { IoMail } from "react-icons/io5";
 import Footer from "./Footer";
+import { BsInstagram } from "react-icons/bs";
 // Map configuration
 const containerStyle = {
   width: "100%",
@@ -80,19 +81,29 @@ const Contact = () => {
           / CONTACT US
         </p>
         <ul className="flex no-underline gap-3">
-          <li className="bg-white p-2 rounded">
-            <FaFacebook className="text-blue-900" />
-          </li>
-          <li className="bg-white p-2 rounded">
-            <FaWhatsapp className="text-green-500" />
-          </li>
-          <li className="bg-white p-2 rounded">
-            <FaLinkedin className="text-blue-600" />
-          </li>
-          <li className="bg-white p-2 rounded">
-            <FaPinterest className="text-red-700" />
-          </li>
-        </ul>
+                  <a
+                    href="https://www.facebook.com/share/1DRiY8jDfo/?mibextid=wwXIfr"
+                    className="bg-white p-2 rounded"
+                  >
+                    <FaFacebook className="text-blue-900" />
+                  </a>
+        
+                  <a href="https://wa.me/971582450101" className="bg-white p-2 rounded">
+                    <FaWhatsapp className="text-green-500" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/jashan-singh-99815b1b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    className="bg-white p-2 rounded"
+                  >
+                    <FaLinkedin className="text-blue-600" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/jashan_dxb_realtor?igsh=cTNjbmphaDh5ZHQ1&utm_source=qr"
+                    className="bg-white p-2 rounded"
+                  >
+                    <BsInstagram className="text-[#ca3059]" />
+                  </a>
+                </ul>
       </div>
 
       {/* Contact Section */}
